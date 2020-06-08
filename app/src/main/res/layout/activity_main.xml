@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signaturePad"
+android:layout_above="@+id/aaa"
+        />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveButton"
+            android:text="Save"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/clearButton"
+            android:text="Clear"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>
